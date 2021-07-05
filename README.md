@@ -139,11 +139,12 @@ the code shows:
 
   1. only one number .
 
-     for example , 18 . it means , you will add 18 tag points , that the index is from 0  to 17 .
+     for example : 18 . it means , you will add 18 tag points . the index is from 0  to 17, and the tags are Tag0, Tag4, ..., Tag17.
 
   2. two number
 
-     we will find out the min value and the max value , then add tags from min to max
+     we will find out the min-value and the max-value , then add tags from min to max
+     for example : 3,6 . it means , you will add 4 tag points . the index is : 3, 4, 5, 6, and the tags are Tag3, Tag4, Tag5, Tag6.
 
   3.  others
 
