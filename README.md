@@ -106,8 +106,7 @@ This is a library using for read / write opc tag values . Using OpcController to
 
  the code shows : 
 
- when tag point "Tags.SystemRunning” comes to  "True" , then even action "OnFinished" will be called asynchronous.
-
+ when tag point "Tags.SystemRunning” comes to  "True" , then event action "OnFinished" will be called asynchronous.
 
 
  4.How to define tags 
@@ -132,27 +131,27 @@ the code shows:
 
   a tags class defined , which is named "Tags" , and is marked with  [OpcProject(" project description")]. 
 
-  a tag is a  “OpcTagItem<T>”  or "IndexedOpcTagItem<T>".
+  a tag is an  “OpcTagItem<T>”  or "IndexedOpcTagItem<T>".
 
      the difference is "IndexedOpcTagItem" uses numbers as tags count.
 
-     the "IndexedOpcTagItem" argument  "indexes" is the tags count.  it should be like bellows :
+     the "IndexedOpcTagItem" argument "indexes" is the tags count.  it should be like bellows :
 
   1. only one number .
 
      for example , 18 . it means , you will add 18 tag points , that the index is from 0  to 17 .
 
-2. two number
+  2. two number
 
-   we will find out the min value and the max value , then add tags from min to max
+     we will find out the min value and the max value , then add tags from min to max
 
-3.  others
+  3.  others
 
-   it means , we will add tags with each number 
+     it means , we will add tags with each number 
 
-   for example : [3,7]
+     for example : [3,7]
 
-      we will add Tag3 and Tag7.
+         we will add Tag3 and Tag7.
 
 
 5. How to write a value 
